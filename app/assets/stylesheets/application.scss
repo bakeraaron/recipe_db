@@ -1,5 +1,19 @@
 @import "bootstrap";
 
+body {
+	background: #fcfcfc;
+	padding-bottom: 100px;
+}
+#nav {
+	background-color: #d6d6d6;
+}
+	#nav .navbar-brand {
+		color: #ff8a7f;
+		font-size: 25px;
+	}
+	#nav li a {
+		color: #e3e85a;
+	}
 .container {
 	justify-content: center;
 	align-items: center;
@@ -14,8 +28,8 @@ img.recipe-show {
 	height: 600px;
 	width: auto;
 	position: relative;
-	box-shadow: 10px 10px 5px #888888;
-	background: #f1f1f1;
+	background: #e2f3ff;
+	border-radius: 0 0 25px 25px;
 }
 img.recipe-index {
 	width: 100%;
@@ -57,6 +71,8 @@ img.recipe-index {
 #title {
 	text-align: center;
 	padding: 20px;
+	color: #ff8a7f;
+	font-size: 55px;
 }
 
 #recipe_image {
@@ -92,6 +108,9 @@ img.recipe-index {
 		width: 250px;
 		margin: 0 auto;
 	}
+		.list-items h3 {
+			color: #ff8a7f;
+		}
 		.form-group {
 			display: block;
 			position: relative;
@@ -114,7 +133,17 @@ img.recipe-index {
 	.edit-back {
 		text-align: center;
 	}
-
+	.actions input {
+		background-color: #add0f4;
+		border: none;
+		color: #ffffff;
+	}
+.add_nested_fields_link {
+	padding: 0 10px;
+}
+input {
+	border-radius: 5px;
+}
 
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files

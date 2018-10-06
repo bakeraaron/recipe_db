@@ -5,7 +5,7 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Recipes</h1>
-<div class="recipe_box">
+<div class="recipe-container">
   <div class="row">
     <% @recipes.each do |recipe| %>
     <div class="col-md-4">
@@ -20,7 +20,7 @@
               <%= link_to 'Edit', edit_recipe_path(recipe) %> |
               <%= link_to 'Delete', recipe, method: :delete, data: { confirm: 'Are you sure?' } %></li>
         </ul>
-      </div><!--repipe_box-->
+      </div><!--repipe-container-->
     </div><!--col-md-4-->
     <% end %>
 </div><!--row ends-->
