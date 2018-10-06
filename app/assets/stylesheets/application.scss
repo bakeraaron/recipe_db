@@ -1,5 +1,9 @@
 @import "bootstrap";
 
+.container {
+	justify-content: center;
+	align-items: center;
+}
 img.recipe-show {
 	width: 400px;
 	height: auto;
@@ -28,10 +32,11 @@ img.recipe-index {
 	font-size: 24px;
 }
 .show-pg-recipe {
-	display: inline-flex;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
+	flex-direction: row;
 }
 	.recipe-title {
 		font-size: 50px;
@@ -49,9 +54,66 @@ img.recipe-index {
 		display: inline-block;
 		position: relative;
 	}
+#title {
+	text-align: center;
+	padding: 20px;
+}
 
+#recipe_image {
+	display: block;
+}
+.image {
+	display: block;
+	max-width: 400px;
+	margin: auto;
+}
+#image_options {
+	display: block;
+	margin: 10px auto;
+}
+.form-group label {
+	font-weight: 600;
+}
+.list-block {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	margin: auto;
+	padding-top: 40px;
+}
+	.list-block h3 {
+		padding: 10px;
+	}
+	.list-items {
+		position: relative;
+		display: block;
+		width: 250px;
+		margin: 0 auto;
+	}
+		.form-group {
+			display: block;
+			position: relative;
+			left: 0;
+		}
+		
+			.add_nested_fields_link {
+				text-align: center;
+				margin: 0 auto;
+			}
 
+		.nested_fields {
+			margin: 10px;
+		}
 
+.actions {
+	text-align: center;
+	padding: 10px;
+}
+	.edit-back {
+		text-align: center;
+	}
 
 
 /*

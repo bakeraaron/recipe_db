@@ -14,12 +14,14 @@
     </div>
   <% end %>
 
-  <div class="form-group">
-    <%= form.file_field :image %>
+  <div class="form-group image">
     <% if recipe.image? %>
       <%= image_tag @recipe.image.url, class: "recipe-show" %>
+      <div id="image_options">
+      <%= form.file_field :image %>
       <%= form.check_box :remove_image %>
         Remove Image
+      </div>
     <% end %>
   </div>
 
@@ -32,24 +34,46 @@
     <%= form.label :description %>
     <%= form.text_area :description, id: :recipe_description, class: 'form-control' %>
   </div>
-<h3>Add Ingredients</h3>
-<div class="form-group">
-  <%= form.nested_fields_for :ingredients do |ingredient| %>
-    <%= ingredient.text_field :content %>
-    <%= ingredient.remove_nested_fields_link %>
 
-  <% end %>
-  <%= form.add_nested_fields_link :ingredients%>
-</div>
-<h3>Add Steps</h3>
-<div class="form-group">
-  <%= form.nested_fields_for :steps do |step| %>
-    <%= step.text_field :direction %>
-    <%= step.remove_nested_fields_link %>
 
-  <% end %>
-  <%= form.add_nested_fields_link :steps %>
-</div>
+
+
+
+
+<div class="list-block">
+  <div class="list-items">
+    <h3>Add Ingredients</h3>
+      <div class="form-group">
+        <%= form.nested_fields_for :ingredients do |ingredient| %>
+          <%= ingredient.text_field :content %>
+          <%= ingredient.remove_nested_fields_link %>
+
+        <% end %>
+        <%= form.add_nested_fields_link :ingredients%>
+      </div>
+  </div><!--list-items-->
+
+
+  <div class="list-items">
+    <h3>Add Steps</h3>
+      <div class="form-group">
+        <%= form.nested_fields_for :steps do |step| %>
+          <%= step.text_field :direction %>
+          <%= step.remove_nested_fields_link %>
+
+        <% end %>
+        <%= form.add_nested_fields_link :steps %>
+      </div>
+  </div><!--list-items-->
+</div><!--list-block-->
+
+
+
+
+
+
+
+
 
   <div class="actions">
     <%= form.submit %>
