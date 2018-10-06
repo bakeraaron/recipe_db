@@ -3,6 +3,8 @@
 img.recipe-show {
 	width: 400px;
 	height: auto;
+	display: block;
+	margin: auto;
 }
 .recipe-box {
 	height: 600px;
@@ -25,6 +27,33 @@ img.recipe-index {
 .recipe-box ul li:first-child {
 	font-size: 24px;
 }
+.show-pg-recipe {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+	.recipe-title {
+		font-size: 50px;
+	}
+	.recipe-image {
+		padding: 20px;
+		margin: auto;
+		vertical-align: middle;
+		position: relative;
+		display: inline-block;
+	}
+	.recipe-info {
+		padding: 20px;
+		margin: auto;
+		display: inline-block;
+		position: relative;
+	}
+
+
+
+
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
