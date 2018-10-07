@@ -22,6 +22,14 @@ a {
 	#nav li a {
 		color: #e3e85a;
 	}
+	.navbar-toggler-icon {
+		z-index: 9;
+		background-color: #ff8a7f;
+		display: block;
+		position: relative;
+		height: 3px;
+		margin: 5px;
+	}
 .container {
 	justify-content: center;
 	align-items: center;
@@ -188,6 +196,28 @@ input {
 	.recipe-container a {
 		text-align: center;
 	}
+}
+@media only screen and (max-width: 545px) {
+	.list-block h3 {
+		text-align: center;
+	}
+	.nested_fields {
+		padding: 0 22px;
+	}
+	.add-ingredient-link {
+		display: block;
+		margin: 0 auto;
+		width: 130px;
+	}
+	.add-step-link {
+		display: block;
+		margin: 0 auto;
+		width: 87px;
+	}
+	img.recipe-show {
+		padding: 10px;
+	}
+	
 }
 
 /*

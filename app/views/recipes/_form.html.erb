@@ -49,7 +49,9 @@
           <%= ingredient.remove_nested_fields_link %>
 
         <% end %>
-        <%= form.add_nested_fields_link :ingredients%>
+        <div class="add-ingredient-link">
+          <%= form.add_nested_fields_link :ingredients%>
+        </div>
       </div>
   </div><!--list-items-->
 
@@ -62,7 +64,9 @@
           <%= step.remove_nested_fields_link %>
 
         <% end %>
-        <%= form.add_nested_fields_link :steps %>
+        <div class="add-step-link">
+          <%= form.add_nested_fields_link :steps %>
+        </div>
       </div>
   </div><!--list-items-->
 </div><!--list-block-->
