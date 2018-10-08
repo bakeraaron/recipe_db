@@ -46,7 +46,7 @@ group :production do
   gem 'rails_12factor'
 end
 group :development, :test do
-  gem 'sqlite3'
+  gem 'pg' #replaced sqlite3 with pg
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
